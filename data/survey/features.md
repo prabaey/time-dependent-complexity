@@ -21,8 +21,7 @@ In the next section, we describe the meaning of each feature.
 
 ## Feature description
 
-The second to last column of the table below indicates the type of each feature, while the last column tells us the value it takes on when a survey entry is invalid (i.e. when it
-was not filled in for that day). 
+The second to last column of the table below indicates the type of each feature, while the last column tells us the value it takes on when a survey entry is invalid (i.e. when it was not filled in for that day). 
 
 |**name**|**explanation**|**granularity**|**type**|**missing entry**|
 |--------|---------------|---------------|--------|-----------------|
@@ -45,7 +44,6 @@ was not filled in for that day).
 |medication|indicates whether the correspondent took any medication which lies outside of their prescribed daily dose|3 times/day|boolean|false|
 |alcohol|alcohol use, relative to the average drinking behaviour of the correspondent (0 = None, 1 = Less than normal, 2 = As normal, 3 = More than normal)|3 times/day|integer (0-3)|NaN|
 
-
 In the table above, "granularity" is used to indicate whether a feature was questioned three times a day or only once. If it was questioned only once a day, the feature is 
 duplicated in the three entries that represent each day segment. Consider the following example, which shows the feature vector that contains the values of the features "sleep 
 quality" and "pain" as they are recorded over two consecutive days. 
@@ -59,6 +57,164 @@ quality" and "pain" as they are recorded over two consecutive days.
 |**4**|2|3|
 |**5**|2|3|
 
-On the first day, the patient indicated a sleep quality of 4/5 for the past night. In the morning, their pain levels were 2/5. In the afternoon and evening, they were 3/5 and 2/5
-respectively. On the second day, the patient indicated a sleep quality of only 2/5 for the past night. Their pain levels were 4/5, 3/5 and 3/5 for the morning, afternoon and evening,
-respectively. 
+On the first day, the patient indicated a sleep quality of 4/5 for the past night. In the morning, their pain levels were 2/5. In the afternoon and evening, they were 3/5 and 2/5 respectively. On the second day, the patient indicated a sleep quality of only 2/5 for the past night. Their pain levels were 4/5, 3/5 and 3/5 for the morning, afternoon and evening, respectively. 
+
+## Personalised surveys
+
+As mentioned, the surveys were personalised based on the needs of each patient. Mostly, this means that the types for the main_activity feature and the relaxation_type features vary per patient. Some other small changes are also possible, such as some features not being questioned as the patient indicated that this question was not relevant for them. 
+We go over these changes for every patient, and also indicate which range of dates the survey spans. The timestamps are not present in the feature vectors, but all samples are 
+chronological, and the survey was first filled in on the first full day of wearing the monitor. 
+
+### Patient 1
+
+Dates: 17/03/2021 - 06/04/2021
+
+For this patient, a work day is a day where they went volunteering. 
+
+main_activity feature can take on an integer from 1 - 3:
+1 = volunteering
+2 = relaxation
+3 = other
+
+relaxation_type feature can take on an integer from 1 - 8: 
+1 = Sauna
+2 = Walking
+3 = Doing odd jobs around the house
+4 = Watching TV
+5 = Eutony
+6 = Music
+7 = Reading 
+8 = Resting 
+
+### Patient 2
+
+Dates: 10/10/2021 - 30/10/2021
+
+main_activity feature can take on an integer from 1 - 4:
+1 = working from home
+2 = work (not from home)
+3 = relaxation
+4 = therapy (physiotherapist, general practitioner or psychologist)
+
+relaxation_type feature can take on an integer from 1 - 8:
+1 = sports (e.g. running, intensive bike ride, workout,...)
+2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
+3 = digital (e.g. watching TV, social media, gaming,...)
+4 = pure relaxation (e.g. meditation, listening to music, napping,...)
+5 = music (e.g. practicing an instrument)
+6 = meeting up (e.g. with friends, family,...)
+7 = reading
+8 = other
+
+The medication feature is left out. 
+
+## Patient 3
+
+Dates: 04/04/2021 - 24/04/2021
+
+The patient does not work and therefore does not make a distinction between free days and work days. The "free_day" and "relaxation_FD" features are removed. 
+
+main_activity feature can take on an integer from 1 - 3:
+1 = household tasks
+2 = relaxation
+3 = other
+
+relaxation_type feature can take on an integer from 1 - 8: 
+1 = sports (e.g. running, intensive bike ride, workout,...)
+2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
+3 = digital (e.g. watching TV, social media, gaming,...)
+4 = pure relaxation (e.g. meditation, listening to music, napping,...)
+5 = music (e.g. practicing an instrument)
+6 = meeting up (e.g. with friends, family,...)
+7 = reading
+8 = busy with kids
+
+### Patient 4
+
+Dates: 22/03/2021 - 10/04/2021
+
+main_activity feature can take on an integer from 1 - 4:
+1 = household tasks
+2 = work (not from home)
+3 = relaxation
+4 = other
+
+relaxation_type feature can take on an integer from 1 - 8: 
+1 = sports (e.g. running, intensive bike ride, workout,...)
+2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
+3 = digital (e.g. watching TV, social media, gaming,...)
+4 = pure relaxation (e.g. meditation, listening to music, napping,...)
+5 = music (e.g. practicing an instrument)
+6 = meeting up (e.g. with friends, family,...)
+7 = reading
+8 = other
+
+The alcohol feature is left out. 
+
+### Patient 5
+
+Dates: 11/07/2021 - 31/07/2021
+
+The patient does not go to work and therefore does not make a distinction between free days and work days. The "free_day" and "relaxation_FD" features are removed. 
+
+main_activity feature can take on an integer from 1 - 4:
+1 = working from home (household tasks, administration,...)
+2 = relaxation
+3 = sport (fitness, swimming,...)
+4 = other
+
+relaxation_type feature can take on an integer from 1 - 7: 
+1 = physical activities (e.g. working in the garden, odd jobs, walk,...)
+2 = digital (e.g. watching TV, social media, gaming,...)
+3 = pure relaxation (e.g. meditation, listening to music, napping,...)
+4 = music (e.g. practicing an instrument)
+5 = meeting up (e.g. with friends, family,...)
+6 = reading
+7 = napping
+
+The medication and alcohol features are left out. 
+
+### Patient 6
+
+Dates: 21/04/2021 - 10/05/2021
+
+The patient does not go to work and therefore does not make a distinction between free days and work days. The "free_day" and "relaxation_FD" features are removed. 
+
+main_activity feature can take on a **list** of integers from 1 - 7 (this patient requested to be able to indicate multiple activities per day segment, which is different from other patients):
+1 = working in the garden
+2 = walking
+3 = cooking
+4 = shopping
+5 = practical activities
+6 = relaxation
+7 = other
+
+relaxation_type feature can take on an integer from 1 - 4: 
+1 = watching TV
+2 = gaming
+3 = reading
+4 = resting
+
+The medication and alcohol features are left out.
+
+### Patient 7
+
+Dates: 14/03/2021 - 02/04/2021
+
+main_activity feature can take on an integer from 1 - 4:
+1 = working from home
+2 = work (not from home)
+3 = relaxation
+4 = was supposed to work, but did not (due to illness)
+
+relaxation_type feature can take on an integer from 1 - 8: 
+1 = sports (e.g. running, intensive bike ride, workout,...)
+2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
+3 = digital (e.g. watching TV, social media, gaming,...)
+4 = pure relaxation (e.g. meditation, listening to music, napping,...)
+5 = music (e.g. practicing an instrument)
+6 = meeting up (e.g. with friends, family,...)
+7 = reading
+8 = other
+
+The alcohol feature is left out. 
