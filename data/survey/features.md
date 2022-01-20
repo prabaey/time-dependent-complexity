@@ -4,7 +4,7 @@
 
 All participants filled in a survey at the end of every day during the recording period. This survey was sent out via email at a time chosen by the patient, corresponding to
 what they felt was the end of their day. The survey was conducted in Dutch, since this is the language spoken by all participants. The survey not only featured questions on 
-symptom severity throughout the day, but also inquired about weartime of the monitor and the general types of activities the patients executed throughout the day. 
+symptom severity throughout the day, but also inquired about weartime of the monitor and the general types of activities the patients executed throughout the day. An illustrative example of one of the surveys (translated in English) can be found in the file "daily_survey_example.pdf".
 
 While most questions were the same for all participants, an effort was made to **personalise** the surveys based on each patient's individual needs. In the intake interview, the 
 responsible physician went over the baseline survey together with the patient and made some changes where relevant. For most patients, a distinction was made between days where 
