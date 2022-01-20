@@ -72,39 +72,39 @@ Dates: 17/03/2021 - 06/04/2021
 For this patient, a work day is a day where they went volunteering. 
 
 main_activity feature can take on an integer from 1 - 3:
-1 = volunteering
-2 = relaxation
-3 = other
+1. volunteering
+2. relaxation
+3. other
 
 relaxation_type feature can take on an integer from 1 - 8: 
-1 = Sauna
-2 = Walking
-3 = Doing odd jobs around the house
-4 = Watching TV
-5 = Eutony
-6 = Music
-7 = Reading 
-8 = Resting 
+1. Sauna
+2. Walking
+3. Doing odd jobs around the house
+4. Watching TV
+5. Eutony
+6. Music
+7. Reading 
+8. Resting 
 
 ### Patient 2
 
 Dates: 10/10/2021 - 30/10/2021
 
 main_activity feature can take on an integer from 1 - 4:
-1 = working from home
-2 = work (not from home)
-3 = relaxation
-4 = therapy (physiotherapist, general practitioner or psychologist)
+1. working from home
+2. work (not from home)
+3. relaxation
+4. therapy (physiotherapist, general practitioner or psychologist)
 
 relaxation_type feature can take on an integer from 1 - 8:
-1 = sports (e.g. running, intensive bike ride, workout,...)
-2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
-3 = digital (e.g. watching TV, social media, gaming,...)
-4 = pure relaxation (e.g. meditation, listening to music, napping,...)
-5 = music (e.g. practicing an instrument)
-6 = meeting up (e.g. with friends, family,...)
-7 = reading
-8 = other
+1. sports (e.g. running, intensive bike ride, workout,...)
+2. physical activities (e.g. working in the garden, odd jobs, walk,...)
+3. digital (e.g. watching TV, social media, gaming,...)
+4. pure relaxation (e.g. meditation, listening to music, napping,...)
+5. music (e.g. practicing an instrument)
+6. meeting up (e.g. with friends, family,...)
+7. reading
+8. other
 
 The medication feature is left out. 
 
@@ -115,39 +115,39 @@ Dates: 04/04/2021 - 24/04/2021
 The patient does not work and therefore does not make a distinction between free days and work days. The "free_day" and "relaxation_FD" features are removed. 
 
 main_activity feature can take on an integer from 1 - 3:
-1 = household tasks
-2 = relaxation
-3 = other
+1. household tasks
+2. relaxation
+3. other
 
 relaxation_type feature can take on an integer from 1 - 8: 
-1 = sports (e.g. running, intensive bike ride, workout,...)
-2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
-3 = digital (e.g. watching TV, social media, gaming,...)
-4 = pure relaxation (e.g. meditation, listening to music, napping,...)
-5 = music (e.g. practicing an instrument)
-6 = meeting up (e.g. with friends, family,...)
-7 = reading
-8 = busy with kids
+1. sports (e.g. running, intensive bike ride, workout,...)
+2. physical activities (e.g. working in the garden, odd jobs, walk,...)
+3. digital (e.g. watching TV, social media, gaming,...)
+4. pure relaxation (e.g. meditation, listening to music, napping,...)
+5. music (e.g. practicing an instrument)
+6. meeting up (e.g. with friends, family,...)
+7. reading
+8. busy with kids
 
 ### Patient 4
 
 Dates: 22/03/2021 - 10/04/2021
 
 main_activity feature can take on an integer from 1 - 4:
-1 = household tasks
-2 = work (not from home)
-3 = relaxation
-4 = other
+1. household tasks
+2. work (not from home)
+3. relaxation
+4. other
 
 relaxation_type feature can take on an integer from 1 - 8: 
-1 = sports (e.g. running, intensive bike ride, workout,...)
-2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
-3 = digital (e.g. watching TV, social media, gaming,...)
-4 = pure relaxation (e.g. meditation, listening to music, napping,...)
-5 = music (e.g. practicing an instrument)
-6 = meeting up (e.g. with friends, family,...)
-7 = reading
-8 = other
+1. sports (e.g. running, intensive bike ride, workout,...)
+2. physical activities (e.g. working in the garden, odd jobs, walk,...)
+3. digital (e.g. watching TV, social media, gaming,...)
+4. pure relaxation (e.g. meditation, listening to music, napping,...)
+5. music (e.g. practicing an instrument)
+6. meeting up (e.g. with friends, family,...)
+7. reading
+8. other
 
 The alcohol feature is left out. 
 
@@ -158,19 +158,19 @@ Dates: 11/07/2021 - 31/07/2021
 The patient does not go to work and therefore does not make a distinction between free days and work days. The "free_day" and "relaxation_FD" features are removed. 
 
 main_activity feature can take on an integer from 1 - 4:
-1 = working from home (household tasks, administration,...)
-2 = relaxation
-3 = sport (fitness, swimming,...)
-4 = other
+1. working from home (household tasks, administration,...)
+2. relaxation
+3. sport (fitness, swimming,...)
+4. other
 
 relaxation_type feature can take on an integer from 1 - 7: 
-1 = physical activities (e.g. working in the garden, odd jobs, walk,...)
-2 = digital (e.g. watching TV, social media, gaming,...)
-3 = pure relaxation (e.g. meditation, listening to music, napping,...)
-4 = music (e.g. practicing an instrument)
-5 = meeting up (e.g. with friends, family,...)
-6 = reading
-7 = napping
+1. physical activities (e.g. working in the garden, odd jobs, walk,...)
+2. digital (e.g. watching TV, social media, gaming,...)
+3. pure relaxation (e.g. meditation, listening to music, napping,...)
+4. music (e.g. practicing an instrument)
+5. meeting up (e.g. with friends, family,...)
+6. reading
+7. napping
 
 The medication and alcohol features are left out. 
 
@@ -181,19 +181,19 @@ Dates: 21/04/2021 - 10/05/2021
 The patient does not go to work and therefore does not make a distinction between free days and work days. The "free_day" and "relaxation_FD" features are removed. 
 
 main_activity feature can take on a **list** of integers from 1 - 7 (this patient requested to be able to indicate multiple activities per day segment, which is different from other patients):
-1 = working in the garden
-2 = walking
-3 = cooking
-4 = shopping
-5 = practical activities
-6 = relaxation
-7 = other
+1. working in the garden
+2. walking
+3. cooking
+4. shopping
+5. practical activities
+6. relaxation
+7. other
 
 relaxation_type feature can take on an integer from 1 - 4: 
-1 = watching TV
-2 = gaming
-3 = reading
-4 = resting
+1. watching TV
+2. gaming
+3. reading
+4. resting
 
 The medication and alcohol features are left out.
 
@@ -202,19 +202,19 @@ The medication and alcohol features are left out.
 Dates: 14/03/2021 - 02/04/2021
 
 main_activity feature can take on an integer from 1 - 4:
-1 = working from home
-2 = work (not from home)
-3 = relaxation
-4 = was supposed to work, but did not (due to illness)
+1. working from home
+2. work (not from home)
+3. relaxation
+4. was supposed to work, but did not (due to illness)
 
 relaxation_type feature can take on an integer from 1 - 8: 
-1 = sports (e.g. running, intensive bike ride, workout,...)
-2 = physical activities (e.g. working in the garden, odd jobs, walk,...)
-3 = digital (e.g. watching TV, social media, gaming,...)
-4 = pure relaxation (e.g. meditation, listening to music, napping,...)
-5 = music (e.g. practicing an instrument)
-6 = meeting up (e.g. with friends, family,...)
-7 = reading
-8 = other
+1. sports (e.g. running, intensive bike ride, workout,...)
+2. physical activities (e.g. working in the garden, odd jobs, walk,...)
+3. digital (e.g. watching TV, social media, gaming,...)
+4. pure relaxation (e.g. meditation, listening to music, napping,...)
+5. music (e.g. practicing an instrument)
+6. meeting up (e.g. with friends, family,...)
+7. reading
+8. other
 
 The alcohol feature is left out. 
