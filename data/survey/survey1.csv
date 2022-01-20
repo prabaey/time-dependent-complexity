@@ -1,4 +1,4 @@
-valid,late,weartime,sleep_quality1,free_day,relaxation,relaxation_type,rest_FD,main_activity,phy_intense,fatigue,pain,ment_intense,satisfaction,mood,stress,medication,alcohol
+valid,late,weartime,sleep_quality,free_day,relaxation,relaxation_type,rest_FD,main_activity,phy_intense,fatigue,pain,ment_intense,satisfaction,mood,stress,medication,alcohol
 True,False,True,2.0,False,4.0,"[4, 7]",0.0,1.0,1.0,3.0,3.0,4.0,4.0,4.0,3.0,False,0.0
 True,False,True,2.0,False,4.0,"[4, 7]",0.0,3.0,1.0,4.0,3.0,2.0,4.0,4.0,1.0,False,0.0
 True,False,True,2.0,False,4.0,"[4, 7]",0.0,2.0,1.0,4.0,3.0,1.0,4.0,4.0,1.0,True,0.0
