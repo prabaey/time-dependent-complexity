@@ -18,10 +18,14 @@ The data folder contains all data recorded from 7 patients during a period of 3 
 - data/functioning: "functioning.md" contains a textual description of the ranking of the three weeks in terms of general functioning of a patient. The physician responsible for follow-up of the patient also provided a short description on why they came to their conclusions. Sometimes, physicians were able to rate the general functioning as a score out of 5, in that case this score is also mentioned. 
 
 The activity counts are a processed version of the raw acceleration recordings, obtained by applying the function "activity_counts_pipeline" in "lib/activity_counts.py" to the recorded accelerations. As an input, this function needs a path to a CSV-file which contains the following columns:
-- "Time" (timestamp)
-- "X" (acceleration in gravitational units around the X axis)
-- "Y" (acceleration in gravitational units around the Y axis)
-- "Z" (acceleration in gravitational units around the Z axis)
+- "Time": timestamp
+- "X": acceleration in gravitational units measured at the X axis
+- "Y": acceleration in gravitational units measured at the Y axis
+- "Z": acceleration in gravitational units measured at the Z axis
+
 The function also takes the sampling frequency in Hz as an input ("fs"), which is set to 50 Hz (the sampling frequency of our recordings) as a default. 
 
 We only publish the processed activity counts, since the files containing the raw recordings are several GB large. These raw recordings are available upon request, just send an email to paloma.rabaey@ugent.be. 
+
+## Notebooks
+
