@@ -125,7 +125,7 @@ def complexity_evolution(sig, width, step, n_min, n_max):
     """
     The time-dependent complexity method which extracts a list of fractal dimensions for various scales over time.
 
-    :param sig: dataframe containing the activity counts and the timestamp these correspond to (the start of the 1-minute interval
+    :param sig: dataframe containing the activity counts and the timestamps these correspond to (the start of the 1-minute interval
                 for which these were obtained)
     :param width: width of the window which slides over the sequence and calculates the fractal dimension for the activity sequence 
                     contained within it. this is described as a string from which a Timedelta can be extracted (e.g. "3 days")
@@ -153,5 +153,6 @@ def complexity_evolution(sig, width, step, n_min, n_max):
     timestamps = pd.to_datetime(timestamps)
     timestamps = timestamps.to_pydatetime() #  the timestamps are returned in the datetime format for easy plotting of the obtained evolution
 
-    return dimensions, timestamps, scales # dimensions contains a list of fractal dimensions for every scale in "scales", for every timestamp in "timestamps"
-                                            # with the timestamp indicating the end of the window for which the dimensions were calculated
+    return np.array(dimensions), np.array(timestamps), scales # dimensions contains a list of fractal dimensions for every scale in "scales", for every timestamp 
+                                                              # in "timestamps", with the timestamp indicating the end of the window for which the dimensions were 
+                                                              # calculated

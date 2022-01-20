@@ -127,8 +127,7 @@ def aggregate_counts(df, interval):
     return recounted
 
 
-# approximation and simplification of the pipeline Actigraph software uses to calculate the activity counts
-def actigraph_pipeline(filename):
+def activity_counts_pipeline(filename, fs=50):
 
     """
     Pipeline we used to obain our counts sequences from the raw acceleration recordings. The structure of the pipeline is based on 
@@ -142,7 +141,7 @@ def actigraph_pipeline(filename):
 
     sig = read_csv(filename)
     sig = aggregation_metric(sig, metric="magnitude")
-    sig["R"] = butter_filter(sig["R"], 1/60, 2.5, 50)
+    sig["R"] = butter_filter(sig["R"], 1/60, 2.5, fs)
     counts = calculate_counts(sig, "1S", col="R")
     cpm = aggregate_counts(counts, "1T")
 
