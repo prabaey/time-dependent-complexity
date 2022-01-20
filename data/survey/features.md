@@ -108,7 +108,7 @@ relaxation_type feature can take on an integer from 1 - 8:
 
 The medication feature is left out. 
 
-## Patient 3
+### Patient 3
 
 Dates: 04/04/2021 - 24/04/2021
 
