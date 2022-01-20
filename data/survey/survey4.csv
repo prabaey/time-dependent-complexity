@@ -1,0 +1,61 @@
+valid,late,weartime,sleep_quality,free_day,relaxation,relaxation_type,rest_FD,main_activity,phy_intense,fatigue,pain,ment_intense,satisfaction,mood,stress,medication
+True,False,True,4,False,2.0,"[3, 4, 8]",0.0,2.0,3.0,3.0,2.0,1.0,5.0,5.0,2.0,False
+True,False,True,4,False,2.0,"[3, 4, 8]",0.0,1.0,3.0,3.0,2.0,1.0,5.0,5.0,2.0,False
+True,False,True,4,False,2.0,"[3, 4, 8]",0.0,1.0,2.0,4.0,3.0,1.0,5.0,4.0,2.0,True
+True,False,True,4,False,3.0,"[3, 4, 8]",0.0,2.0,4.0,3.0,2.0,3.0,4.0,4.0,2.0,False
+True,False,True,4,False,3.0,"[3, 4, 8]",0.0,1.0,3.0,4.0,3.0,3.0,4.0,3.0,2.0,False
+True,False,True,4,False,3.0,"[3, 4, 8]",0.0,1.0,2.0,4.0,3.0,4.0,4.0,2.0,4.0,False
+True,False,True,4,False,4.0,"[3, 7, 8]",0.0,2.0,4.0,4.0,4.0,2.0,4.0,3.0,1.0,False
+True,False,True,4,False,4.0,"[3, 7, 8]",0.0,1.0,2.0,3.0,3.0,1.0,4.0,3.0,1.0,False
+True,False,True,4,False,4.0,"[3, 7, 8]",0.0,1.0,2.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,2.0,"[4, 8]",0.0,2.0,4.0,4.0,3.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,2.0,"[4, 8]",0.0,1.0,3.0,4.0,4.0,1.0,4.0,4.0,1.0,True
+True,False,True,4,False,2.0,"[4, 8]",0.0,1.0,2.0,4.0,4.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,4.0,"[3, 8]",0.0,2.0,3.0,4.0,4.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,4.0,"[3, 8]",0.0,1.0,2.0,4.0,4.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,4.0,"[3, 8]",0.0,1.0,2.0,4.0,4.0,1.0,4.0,4.0,1.0,False
+True,False,False,4,True,4.0,"[3, 4, 8]",2.0,0.0,2.0,2.0,2.0,2.0,4.0,4.0,1.0,False
+True,False,True,4,True,4.0,"[3, 4, 8]",2.0,0.0,1.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,True,4.0,"[3, 4, 8]",2.0,0.0,2.0,3.0,3.0,1.0,4.0,4.0,1.0,True
+True,False,True,3,True,4.0,"[3, 4, 8, 8]",3.0,0.0,3.0,4.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,3,True,4.0,"[3, 4, 8, 8]",3.0,0.0,2.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,3,True,4.0,"[3, 4, 8, 8]",3.0,0.0,2.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,3.0,"[3, 8]",0.0,2.0,4.0,4.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,3.0,"[3, 8]",0.0,1.0,2.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,4,False,3.0,"[3, 8]",0.0,1.0,3.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,3,False,4.0,"[3, 8]",0.0,2.0,4.0,4.0,3.0,1.0,4.0,4.0,1.0,False
+True,False,True,3,False,4.0,"[3, 8]",0.0,1.0,2.0,3.0,3.0,1.0,4.0,4.0,1.0,False
+True,False,True,3,False,4.0,"[3, 8]",0.0,1.0,2.0,3.0,3.0,1.0,3.0,4.0,1.0,False
+True,False,True,2,False,4.0,"[3, 8]",0.0,2.0,4.0,4.0,4.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,False,4.0,"[3, 8]",0.0,1.0,2.0,4.0,4.0,1.0,3.0,3.0,1.0,True
+True,False,True,2,False,4.0,"[3, 8]",0.0,1.0,2.0,4.0,4.0,1.0,3.0,3.0,1.0,False
+True,False,True,2,False,2.0,"[3, 8]",0.0,2.0,4.0,4.0,4.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,False,2.0,"[3, 8]",0.0,1.0,3.0,4.0,3.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,False,2.0,"[3, 8]",0.0,1.0,2.0,4.0,4.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,False,4.0,"[3, 8]",0.0,2.0,3.0,4.0,4.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,False,4.0,"[3, 8]",0.0,1.0,2.0,4.0,4.0,2.0,4.0,3.0,2.0,True
+True,False,True,2,False,4.0,"[3, 8]",0.0,1.0,2.0,3.0,3.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,True,4.0,[3],3.0,0.0,2.0,4.0,2.0,2.0,4.0,4.0,1.0,False
+True,False,True,2,True,4.0,[3],3.0,0.0,1.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,2,True,4.0,[3],3.0,0.0,1.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,2,True,4.0,[8],3.0,0.0,3.0,4.0,2.0,1.0,4.0,4.0,1.0,True
+True,False,True,2,True,4.0,[8],3.0,0.0,2.0,4.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,2,True,4.0,[8],3.0,0.0,2.0,3.0,2.0,1.0,4.0,4.0,1.0,False
+True,False,True,2,True,4.0,"[3, 6, 8]",2.0,0.0,2.0,4.0,2.0,2.0,3.0,4.0,1.0,False
+True,False,True,2,True,4.0,"[3, 6, 8]",2.0,0.0,2.0,4.0,2.0,1.0,3.0,4.0,1.0,False
+True,False,True,2,True,4.0,"[3, 6, 8]",2.0,0.0,2.0,4.0,2.0,1.0,3.0,4.0,1.0,False
+True,False,True,2,False,3.0,"[3, 8]",0.0,2.0,4.0,4.0,3.0,1.0,4.0,3.0,1.0,False
+True,False,True,2,False,3.0,"[3, 8]",0.0,1.0,2.0,4.0,3.0,1.0,3.0,3.0,1.0,False
+True,False,True,2,False,3.0,"[3, 8]",0.0,1.0,2.0,4.0,3.0,1.0,4.0,3.0,1.0,False
+True,False,True,3,False,3.0,"[3, 8]",0.0,2.0,4.0,4.0,4.0,1.0,4.0,3.0,1.0,True
+True,False,True,3,False,3.0,"[3, 8]",0.0,1.0,2.0,4.0,3.0,1.0,3.0,3.0,1.0,False
+True,False,True,3,False,3.0,"[3, 8]",0.0,1.0,3.0,4.0,3.0,1.0,3.0,3.0,1.0,False
+True,False,True,2,False,3.0,"[3, 6, 8]",0.0,2.0,4.0,4.0,3.0,1.0,4.0,4.0,1.0,False
+True,False,True,2,False,3.0,"[3, 6, 8]",0.0,1.0,3.0,4.0,3.0,1.0,3.0,4.0,1.0,False
+True,False,True,2,False,3.0,"[3, 6, 8]",0.0,4.0,2.0,4.0,4.0,1.0,3.0,4.0,1.0,True
+True,False,True,3,False,4.0,"[3, 8]",0.0,2.0,4.0,4.0,4.0,1.0,4.0,4.0,1.0,False
+True,False,True,3,False,4.0,"[3, 8]",0.0,3.0,2.0,4.0,3.0,1.0,3.0,4.0,1.0,False
+True,False,True,3,False,4.0,"[3, 8]",0.0,3.0,2.0,4.0,3.0,1.0,3.0,4.0,1.0,False
+True,False,False,2,True,4.0,"[3, 8]",2.0,0.0,2.0,3.0,4.0,2.0,4.0,4.0,1.0,True
+True,False,True,2,True,4.0,"[3, 8]",2.0,0.0,2.0,3.0,2.0,1.0,3.0,4.0,1.0,False
+True,False,True,2,True,4.0,"[3, 8]",2.0,0.0,2.0,3.0,2.0,1.0,3.0,4.0,1.0,False
