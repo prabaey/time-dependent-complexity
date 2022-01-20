@@ -127,7 +127,7 @@ relaxation_type feature can take on an integer from 1 - 8:
 5. music (e.g. practicing an instrument)
 6. meeting up (e.g. with friends, family,...)
 7. reading
-8. busy with kids
+8. children
 
 ### Patient 4
 
