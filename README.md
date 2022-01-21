@@ -30,4 +30,5 @@ We only publish the processed activity counts, since the files containing the ra
 
 This repository contains some Jupyter notebooks which aim to demonstrate how to obtain our results, by applying the functions found in the "lib" folder. We also provide some additional material, in which we elaborate on some issues with the complexity methods, which were shortly mentioned in the paper but were not yet addressed in detail.
 - "code_example.ipynb": Shows how to reproduce the results reported in our paper by applying the functions from "lib/complexity.py" and "lib/helpers.py" to a single activity sequence. This also illustrates the use of these functions to anyone who would like to try them out on their own activity sequences. 
-- 
+- "motivation_AAA_method": Motivates the changes that were made to the original allometric aggregation method through examples. These changes, implemented in the AAA method, solve some of the instabilities and robustness issues the original method suffers from. 
+- "day_night_artefacts": Elaborates on the daily oscillations which occur in the evolution signals, as a result of the alternation between sleep and wake time. 
