@@ -1,14 +1,13 @@
 # time-dependent-complexity
-This repository contains the code needed to reproduce the results reported in "Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome". Additionally, it also contains our novel open-source data set which was used for evaluation.
 
-**Link to paper on Arxiv/title of paper/...**
+This repository contains the code needed to reproduce the results reported in the paper "Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome". Additionally, it also contains our novel open-source data set which was used for evaluation of our methods. 
 
 ## Libraries
 
-The "lib" folder contains two a number of files, each collecting a list of functions that can be used to reproduce some part of our results. 
+The "lib" folder contains three files, each collecting a list of functions that can be used to reproduce the results reported in our paper. 
 - lib/complexity.py: Contains the implementation of the three complexity methods as described in the paper: the original allometric aggregation method, the adapted allometric aggregation method, and the time-dependent complexity method which extract an evolution of the fractal dimension over time ("complexity_evolution"). 
 - lib/activity_counts.py: Contains a number of preprocessing steps which are needed to transform the raw accelerations (recorded along 3 orthogonal axes) into the activity counts. The function "activity_counts_pipeline" contains the exact order of preprocessing steps (including parameter choices) we applied to get our activity counts sequences that are accessible in the "data/activity" folder. 
-- lib/helpers.py: ...
+- lib/helpers.py: Contains a number of helper functions for visualization of results and generation of additional statistics for the dataset. The use of these functions is illustrated in the Jupyter notebook "notebooks/code_example.ipynb", where we demonstrate how to reproduce the results reported in the paper, using the helper functions and the defined complexity methods. 
 
 ## Data
 
@@ -29,3 +28,6 @@ We only publish the processed activity counts, since the files containing the ra
 
 ## Notebooks
 
+This repository contains some Jupyter notebooks which aim to demonstrate how to obtain our results, by applying the functions found in the "lib" folder. We also provide some additional material, in which we elaborate on some issues with the complexity methods, which were shortly mentioned in the paper but were not yet addressed in detail.
+- "code_example.ipynb": Shows how to reproduce the results reported in our paper by applying the functions from "lib/complexity.py" and "lib/helpers.py" to a single activity sequence. This also illustrates the use of these functions to anyone who would like to try them out on their own activity sequences. 
+- 
