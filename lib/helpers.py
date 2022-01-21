@@ -160,8 +160,7 @@ def sliding_window_activity(sig, width, step):
     aggregated_activity = []
     timestamps = []
     
-    while(end < sig.index[-1]): 
-
+    while(end <= sig.index[-1]): 
         count_sum = sig["counts"][start:end].sum()
         aggregated_activity.append(count_sum)
         timestamps.append(end)
@@ -189,7 +188,7 @@ def plot_activity_complexity(evol_compl, evol_activity, timestamps):
 
     fig, ax1 = plt.subplots(figsize=(20, 5))
 
-    ax1.plot(timestamps, evol_compl[:,35], label="3 hour complexity")
+    ax1.plot(timestamps, evol_compl[:,35], label="3 hour complexity", color="tab:blue")
     ax1.set_xlabel("date")
     ax1.set_ylabel("fractal dimension")
     ax1.set_ylim(1, 1.5)
@@ -197,7 +196,7 @@ def plot_activity_complexity(evol_compl, evol_activity, timestamps):
 
     ax2 = ax1.twinx()
 
-    ax2.plot(timestamps, evol_activity, label="activity")
+    ax2.plot(timestamps, evol_activity, label="activity", color="tab:orange")
     ax2.set_ylabel("activity counts")
     ax2.legend(loc="upper right")
 
@@ -214,6 +213,9 @@ def scatter_activity_complexity(evol_compl, evol_activity):
                        representing the evolution of the fractal dimension of the activity counts within consecutive 3-day windows
     :param evol_activity: 1D-array of summed activity counts, representing the intensity of activity within consecutive 3-day windows, aligned with the 
                           corresponding fractal dimensions in "evol_compl"
+
+    return: Pearson correlation coefficient for the relation between the 3-day activity evolution and the 3-day complexity evolution (both signals 
+            sampled 3 times a day)
     """
 
     plt.figure()
