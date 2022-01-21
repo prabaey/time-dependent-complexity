@@ -28,6 +28,6 @@ We only publish the processed activity counts, since the files containing the ra
 
 ## Notebooks
 
-This folder contains some Jupyter notebooks which aim to demonstrate how to obtain our results, by applying the functions found in the "lib" folder. We also provide some additional material, in which we elaborate on some issues with the complexity methods, which were shortly mentioned in the paper but were not yet addressed in detail.
+This repository contains some Jupyter notebooks which aim to demonstrate how to obtain our results, by applying the functions found in the "lib" folder. We also provide some additional material, in which we elaborate on some issues with the complexity methods, which were shortly mentioned in the paper but were not yet addressed in detail.
 - "code_example.ipynb": Shows how to reproduce the results reported in our paper by applying the functions from "lib/complexity.py" and "lib/helpers.py" to a single activity sequence. This also illustrates the use of these functions to anyone who would like to try them out on their own activity sequences. 
 - 
