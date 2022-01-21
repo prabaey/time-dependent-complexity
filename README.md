@@ -1,6 +1,8 @@
 # time-dependent-complexity
 
-This repository contains the code needed to reproduce the results reported in the paper "Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome". Additionally, it also contains our novel open-source data set which was used for evaluation of our methods. <!--comment-->
+This repository contains the code needed to reproduce the results reported in the paper "Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome". Additionally, it also contains our novel open-source data set which was used for evaluation of our methods. 
+
+<!--Put a link to the medRxiv paper once the paper has been submitted and this repo is made public, and tell them to refer to the paper if they use our dataset or our methods.-->
 
 ## Libraries
 
@@ -24,7 +26,9 @@ The activity counts are a processed version of the raw acceleration recordings, 
 
 The function also takes the sampling frequency in Hz as an input ("fs"), which is set to 50 Hz (the sampling frequency of our recordings) as a default. 
 
-We only publish the processed activity counts, since the files containing the raw recordings are several GB large. These raw recordings are available upon request, just send an email to paloma.rabaey@ugent.be. 
+We only publish the processed activity counts, since the files containing the raw recordings are several GB large. These raw recordings are available upon request, please send an email to paloma.rabaey@ugent.be. 
+
+The study through which this data was obtained was approved by the ethics committee of the University Hospital Ghent under file number B6702020000952. Written informed consent was provided by all participants. All data is anonymised and cannot be traced back to any participant. 
 
 ## Notebooks
 
