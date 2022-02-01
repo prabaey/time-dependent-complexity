@@ -26,7 +26,7 @@ The activity counts are a processed version of the raw acceleration recordings, 
 
 The function also takes the sampling frequency in Hz as an input ("fs"), which is set to 50 Hz (the sampling frequency of our recordings) as a default. 
 
-We only publish the processed activity counts, since the files containing the raw recordings are several GB large. These raw recordings are available upon request, please send an email to paloma.rabaey@ugent.be. 
+We only publish the processed activity counts, since the files containing the raw recordings are several GB large. These raw recordings are available upon request, please send an email to paloma.rabaey@ugent.be. The [Axivity AX3](https://axivity.com/product/ax3) logging device was used to collect the raw recordings. Subjects wore these at their non-dominant wrist, following the orientation convention described in the AX3 documentation (lightning bold sign directed to the right). The sampling frequency was set to 50 Hz, while the sensitivity (the range of recorded accelerations) was set to +- 8g. 
 
 The study through which this data was obtained was approved by the ethics committee of the University Hospital Ghent under file number B6702020000952. Written informed consent was provided by all participants. All data is anonymised and cannot be traced back to any participant. 
 
