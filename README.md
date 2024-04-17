@@ -1,8 +1,21 @@
 # time-dependent-complexity
 
-This repository contains the code needed to reproduce the results reported in the paper "Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome" (currently under review). Additionally, it also contains our novel open-source data set which was used for evaluation of our methods. 
+This repository contains the code needed to reproduce the results reported in the paper "Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome". Additionally, it also contains our novel open-source data set which was used for evaluation of our methods. 
 
-<!--Put a link to the medRxiv paper once the paper has been submitted and this repo is made public, and tell them to refer to the paper if they use our dataset or our methods.-->
+Please cite our paper should you use any of the code or methods in this repository. 
+
+```
+@article{prabaey2024complexity,
+    title={Time-dependent complexity characterisation of activity patterns in patients with Chronic Fatigue Syndrome},
+    author={Paloma Rabaey and Peter Decat and Stefan Heytens and Dirk Vogelaers and Ann Mariman and Thomas Demeester},
+    Journal={Biopsychosoc Med},
+    Year={2024},
+    Volume={18},
+    Number={1},
+    Pages={10},
+    Month={Apr}
+}
+```
 
 ## Libraries
 
